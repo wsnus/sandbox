@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persiapan - Panduan Rumah Tangga Libur Lebaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Panduan Rumah Tangga Libur Lebaran</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="jadwal-cuti.html">Jadwal Cuti</a></li>
+                <li><a href="tanggung-jawab.html">Tanggung Jawab</a></li>
+                <li><a href="persiapan.html">Persiapan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Persiapan untuk Setiap Pegawai</h2>
+            <p>Klik nama pegawai untuk melihat daftar persiapan yang perlu dilakukan.</p>
+            <div class="dropdown">
+                <button class="dropbtn">Mang Agus (Tukang Kebun)</button>
+                <div class="dropdown-content">
+                    <ul class="checklist">
+                        <li><input type="checkbox"> Selesaikan pemotongan rumput dan perbaikan kecil sebelum cuti (sebelum 25 Maret).</li>
+                        <li><input type="checkbox"> Pastikan alat menyapu tersedia untuk Peter & Yohanes (sebelum 25 Maret).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Mba Lia (Pembantu Rumah Tangga)</button>
+                <div class="dropdown-content">
+                    <ul class="checklist">
+                        <li><input type="checkbox"> Siapkan makanan beku untuk seluruh rumah (sebelum 30 Maret).</li>
+                        <li><input type="checkbox"> Selesaikan semua cucian dan setrika (sebelum 30 Maret).</li>
+                        <li><input type="checkbox"> Bersihkan rumah secara menyeluruh (sebelum 30 Maret).</li>
+                        <li><input type="checkbox"> Beri tahu Peter & Yohanes tentang cara menerima paket (sebelum 30 Maret).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Sus Dilah (Pengasuh Anak 1 Tahun)</button>
+                <div class="dropdown-content">
+                    <ul class="checklist">
+                        <li><input type="checkbox"> Tulis jadwal Ebi (makan, tidur, main) untuk Riseu (sebelum 30 Maret).</li>
+                        <li><input type="checkbox"> Serahkan tugas dan nomor darurat ke Riseu (30 Maret).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Riseu (Pengasuh Sementara)</button>
+                <div class="dropdown-content">
+                    <ul class="checklist">
+                        <li><input type="checkbox"> Pelajari jadwal Ebi dari Sus Dilah (30 Maret).</li>
+                        <li><input type="checkbox"> Siapkan nomor darurat dan kebutuhan Ebi (30 Maret).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Fiqry (Supir)</button>
+                <div class="dropdown-content">
+                    <ul class="checklist">
+                        <li><input type="checkbox"> Belanja kebutuhan rumah (makanan, popok, obat) untuk stok sampai 5 April (sebelum 1 April).</li>
+                        <li><input type="checkbox"> Beri tahu Peter & Yohanes cara pesan ojek online (sebelum 1 April).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Peter & Yohanes (Perawat Pria)</button>
+                <div class="dropdown-content">
+                    <ul class="checklist">
+                        <li><input type="checkbox"> Pastikan stok obat kakek cukup sampai 7 April (sebelum 25 Maret).</li>
+                        <li><input type="checkbox"> Pelajari cara pesan makanan online (sebelum 30 Maret).</li>
+                        <li><input type="checkbox"> Siapkan alat menyapu untuk tugas tambahan (sebelum 25 Maret).</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Sus Ifah (Pengasuh Bayi)</button>
+                <div class="dropdown-content">
+                    <ul class="checklist">
+                        <li><input type="checkbox"> Stok popok, susu, dan kebutuhan bayi sampai 7 April (sebelum 25 Maret).</li>
+                        <li><input type="checkbox"> Pelajari cara membantu Riseu jika Ebi rewel (sebelum 31 Maret).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Panduan Rumah Tangga</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.dropbtn').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
