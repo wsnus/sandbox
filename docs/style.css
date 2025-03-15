@@ -6,6 +6,9 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -17,14 +20,20 @@ header {
 
 header h1 {
     color: #FF385C;
-    font-size: 24px;
+    font-size: 28px;
     margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header a {
+    text-decoration: none;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 10px 0 0 0;
     display: flex;
     justify-content: center;
     background-color: #F7F7F7;
@@ -33,7 +42,7 @@ nav ul {
 nav ul li a {
     color: #222222;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     display: block;
     transition: background-color 0.3s;
 }
@@ -45,8 +54,9 @@ nav ul li a:hover, nav ul li.active a {
 
 main {
     max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
 }
 
 section {
@@ -59,60 +69,30 @@ section {
 
 h2 {
     color: #FF385C;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
 h3 {
     color: #222222;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-/* Table Styles */
-.table-container {
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-th, td {
-    border: 1px solid #E0E0E0;
-    padding: 12px;
-    text-align: center;
-}
-
-th {
-    background-color: #F7F7F7;
-    color: #222222;
-}
-
-td.absent {
-    background-color: #FFEBEE; /* Cuti */
-}
-
-td.on-duty {
-    background-color: #E0F7FA; /* Bekerja */
-}
-
-td.not-started {
-    background-color: #F5F5F5; /* Belum Mulai / Selesai */
-}
-
-/* Legend */
-.legend {
+    font-size: 20px;
     margin-bottom: 15px;
 }
 
-.legend span {
-    display: inline-block;
-    padding: 5px 10px;
-    margin-right: 10px;
-    border-radius: 4px;
+/* Zoomable Image for Jadwal Cuti */
+.zoomable-image {
+    text-align: center;
+}
+
+.schedule-image {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.schedule-image.zoomed {
+    transform: scale(2);
 }
 
 /* Tabs for Tanggung Jawab */
@@ -125,7 +105,7 @@ td.not-started {
 .tab-button {
     background-color: #F7F7F7;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
@@ -210,13 +190,37 @@ td.not-started {
     color: #717171;
 }
 
+/* Important Info Pop-up Effect */
+.important-info {
+    position: relative;
+    background-color: #FFF3F3;
+    padding: 20px;
+    border-left: 4px solid #FF385C;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.important-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Standby Info Box */
+.standby-info {
+    background-color: #F9F9F9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
 /* Mobile Menu */
 .hamburger {
     display: none;
     background: none;
     border: none;
     color: #222222;
-    font-size: 24px;
+    font-size: 28px;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -255,7 +259,7 @@ td.not-started {
     background: none;
     border: none;
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 28px;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -264,19 +268,64 @@ td.not-started {
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     background-color: #F7F7F7;
     color: #717171;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav ul { display: none; }
-    .hamburger { display: block; }
-    .tabs { flex-direction: column; }
-    .tab-button { width: 100%; margin: 5px 0; }
-    .table-container { overflow-x: scroll; }
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p, ul li {
+        font-size: 16px;
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tab-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .schedule-image.zoomed {
+        transform: scale(2);
+    }
+
+    .important-info:hover {
+        transform: none;
+    }
 }
