@@ -1,12 +1,12 @@
-const menuButton = document.querySelector('.menu-button');
-const fullScreenMenu = document.querySelector('.full-screen-menu');
+const hamburger = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobile-menu');
 const closeMenu = document.querySelector('.close-menu');
 
-if (menuButton && fullScreenMenu && closeMenu) {
-    menuButton.addEventListener('click', () => fullScreenMenu.classList.toggle('show'));
-    closeMenu.addEventListener('click', () => fullScreenMenu.classList.remove('show'));
-    fullScreenMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => fullScreenMenu.classList.remove('show'));
+if (hamburger && mobileMenu && closeMenu) {
+    hamburger.addEventListener('click', () => mobileMenu.classList.toggle('show'));
+    closeMenu.addEventListener('click', () => mobileMenu.classList.remove('show'));
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => mobileMenu.classList.remove('show'));
     });
 }
 

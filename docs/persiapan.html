@@ -9,8 +9,8 @@
 <body>
     <header>
         <h1>Panduan Rumah TAH Selama Libur Lebaran</h1>
-        <button class="menu-button">≡ Menu</button>
-        <nav class="desktop-nav">
+        <button class="hamburger">☰</button>
+        <nav>
             <ul>
                 <li><a href="index.html">🏠 Beranda</a></li>
                 <li><a href="jadwal-cuti.html">📅 Jadwal</a></li>
@@ -18,7 +18,7 @@
                 <li class="active"><a href="persiapan.html">✅ Persiapan</a></li>
             </ul>
         </nav>
-        <div class="full-screen-menu">
+        <div class="mobile-menu">
             <button class="close-menu">✕</button>
             <ul>
                 <li><a href="index.html">🏠 Beranda</a></li>
@@ -36,17 +36,15 @@
                 <button class="dropbtn">Mang Agus</button>
                 <div class="dropdown-content" style="display: none;">
                     <ul class="checklist">
-                        <li class="checklist-item">
+                        <li class="checklist-item high-priority">
                             <input type="checkbox" class="task-checkbox">
                             <span class="task-text">Rapihkan kebon secara keseluruhan</span>
                             <span class="deadline">(sebelum 25 Maret)</span>
-                            <span class="priority-badge">Prioritas</span>
                         </li>
-                        <li class="checklist-item">
+                        <li class="checklist-item high-priority">
                             <input type="checkbox" class="task-checkbox">
                             <span class="task-text">Siapkan dan tes genset</span>
                             <span class="deadline">(sebelum 25 Maret)</span>
-                            <span class="priority-badge">Prioritas</span>
                         </li>
                         <li class="checklist-item">
                             <input type="checkbox" class="task-checkbox">
@@ -56,22 +54,113 @@
                     </ul>
                 </div>
             </div>
-            <!-- Other dropdowns remain the same as in the previous version -->
             <div class="dropdown">
                 <button class="dropbtn">Mba Lia</button>
                 <div class="dropdown-content" style="display: none;">
                     <ul class="checklist">
-                        <li class="checklist-item">
+                        <li class="checklist-item high-priority">
                             <input type="checkbox" class="task-checkbox">
                             <span class="task-text">Catat seluruh kebutuhan yang perlu dibeli untuk Rumah Kecil dan belakang</span>
                             <span class="deadline">(sebelum 30 Maret)</span>
-                            <span class="priority-badge">Prioritas</span>
                         </li>
-                        <!-- Other items... -->
+                        <li class="checklist-item">
+                            <input type="checkbox" class="task-checkbox">
+                            <span class="task-text">Selesaikan semua cucian, termasuk mencuci secara keseluruhan barang-barang Chewie & Juno, serta selimut kamar TV</span>
+                            <span class="deadline">(sebelum 30 Maret)</span>
+                        </li>
+                        <li class="checklist-item">
+                            <input type="checkbox" class="task-checkbox">
+                            <span class="task-text">Bersihkan rumah menyeluruh</span>
+                            <span class="deadline">(sebelum 30 Maret)</span>
+                        </li>
+                        <li class="checklist-item">
+                            <input type="checkbox" class="task-checkbox">
+                            <span class="task-text">Ajarkan Yohanes, Peter, dan Fiqry menerima paket</span>
+                            <span class="deadline">(sebelum 30 Maret)</span>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <!-- Add other dropdowns as needed -->
+            <div class="dropdown">
+                <button class="dropbtn">Sus Dilah</button>
+                <div class="dropdown-content" style="display: none;">
+                    <ul class="checklist">
+                        <li class="checklist-item">
+                            <input type="checkbox" class="task-checkbox">
+                            <span class="task-text">Tulis dan berikan seluruh catatan dan jadwal aktivitas dan makan Ebi ke Riseu</span>
+                            <span class="deadline">(sebelum 30 Maret)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Riseu</button>
+                <div class="dropdown-content" style="display: none;">
+                    <ul class="checklist">
+                        <li class="checklist-item">
+                            <input type="checkbox" class="task-checkbox">
+                            <span class="task-text">Pelajari jadwal Ebi</span>
+                            <span class="deadline">(30 Maret)</span>
+                        </li>
+                        <li class="checklist-item">
+                            <input type="checkbox" class="task-checkbox">
+                            <span class="task-text">Siapkan nomor darurat</span>
+                            <span class="deadline">(30 Maret)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Fiqry</button>
+                <div class="dropdown-content" style="display: none;">
+                    <ul class="checklist">
+                        <li class="checklist-item high-priority">
+                            <input type="checkbox" class="task-checkbox">
+                            <span class="task-text">Catat dan pastikan semua kendaraan sudah dicuci, barang lengkap, dan tidak ada kendala</span>
+                            <span class="deadline">(sebelum 1 April)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Peter & Yohanes</button>
+                <div class="dropdown-content" style="display: none;">
+                    <ul class="checklist">
+                        <li class="checklist-item high-priority">
+                            <input type="checkbox" class="task-checkbox">
+                            <span class="task-text">Pastikan stok obat kakek</span>
+                            <span class="deadline">(sebelum 25 Maret)</span>
+                        </li>
+                        <li class="checklist-item">
+                            <input type="checkbox" class="task-checkbox">
+                            <span class="task-text">Pelajari pesan makanan online</span>
+                            <span class="deadline">(sebelum 30 Maret)</span>
+                        </li>
+                        <li class="checklist-item">
+                            <input type="checkbox" class="task-checkbox">
+                            <span class="task-text">Tangani genset saat mati listrik</span>
+                            <span class="deadline">(selama 25 Maret - 7 April)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Sus Ifah</button>
+                <div class="dropdown-content" style="display: none;">
+                    <ul class="checklist">
+                        <li class="checklist-item high-priority">
+                            <input type="checkbox" class="task-checkbox">
+                            <span class="task-text">Stok popok dan susu adik Ebi</span>
+                            <span class="deadline">(sebelum 25 Maret)</span>
+                        </li>
+                        <li class="checklist-item">
+                            <input type="checkbox" class="task-checkbox">
+                            <span class="task-text">Pelajari bantu Riseu</span>
+                            <span class="deadline">(sebelum 31 Maret)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
