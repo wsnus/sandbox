@@ -3,95 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Persiapan - Panduan Rumah Tangga Libur Lebaran</title>
+    <title>Persiapan - Panduan Rumah TAH Selama Libur Lebaran</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Panduan Rumah Tangga Libur Lebaran</h1>
+        <h1>Panduan Rumah TAH Selama Libur Lebaran</h1>
+        <button class="hamburger">☰</button>
         <nav>
             <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="jadwal-cuti.html">Jadwal Cuti</a></li>
-                <li><a href="tanggung-jawab.html">Tanggung Jawab</a></li>
-                <li><a href="persiapan.html">Persiapan</a></li>
+                <li><a href="index.html">🏠 Beranda</a></li>
+                <li><a href="jadwal-cuti.html">📅 Jadwal</a></li>
+                <li><a href="tanggung-jawab.html">📋 Tanggung Jawab</a></li>
+                <li class="active"><a href="persiapan.html">✅ Persiapan</a></li>
             </ul>
         </nav>
+        <div class="mobile-menu">
+            <button class="close-menu">✕</button>
+            <ul>
+                <li><a href="index.html">🏠 Beranda</a></li>
+                <li><a href="jadwal-cuti.html">📅 Jadwal</a></li>
+                <li><a href="tanggung-jawab.html">📋 Tanggung Jawab</a></li>
+                <li><a href="persiapan.html">✅ Persiapan</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <section>
-            <h2>Persiapan untuk Setiap Pegawai</h2>
-            <p>Klik nama pegawai untuk melihat daftar persiapan yang perlu dilakukan.</p>
+            <h2>Siapkan Hal Penting</h2>
+            <p>Klik nama peran untuk daftar persiapan.</p>
             <div class="dropdown">
-                <button class="dropbtn">Mang Agus (Tukang Kebun)</button>
+                <button class="dropbtn">Mang Agus</button>
                 <div class="dropdown-content">
                     <ul class="checklist">
-                        <li><input type="checkbox"> Selesaikan pemotongan rumput dan perbaikan kecil sebelum cuti (sebelum 25 Maret).</li>
-                        <li><input type="checkbox"> Pastikan alat menyapu tersedia untuk Peter & Yohanes (sebelum 25 Maret).</li>
+                        <li><input type="checkbox" class="task-checkbox"> Selesaikan pemotongan rumput <span class="deadline">(sebelum 25 Maret)</span> <span class="priority-badge">Prioritas</span></li>
+                        <li><input type="checkbox" class="task-checkbox"> Siapkan alat menyapu untuk Peter & Yohanes <span class="deadline">(sebelum 25 Maret)</span></li>
+                        <li><input type="checkbox" class="task-checkbox"> Siapkan dan tes genset <span class="deadline">(sebelum 25 Maret)</span> <span class="priority-badge">Prioritas</span></li>
+                        <li><input type="checkbox" class="task-checkbox"> Ajarkan Peter & Yohanes dan Fiqry cara menyalakan genset <span class="deadline">(sebelum 25 Maret)</span></li>
                     </ul>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">Mba Lia (Pembantu Rumah Tangga)</button>
+                <button class="dropbtn">Mba Lia</button>
                 <div class="dropdown-content">
                     <ul class="checklist">
-                        <li><input type="checkbox"> Siapkan makanan beku untuk seluruh rumah (sebelum 30 Maret).</li>
-                        <li><input type="checkbox"> Selesaikan semua cucian dan setrika (sebelum 30 Maret).</li>
-                        <li><input type="checkbox"> Bersihkan rumah secara menyeluruh (sebelum 30 Maret).</li>
-                        <li><input type="checkbox"> Beri tahu Peter & Yohanes tentang cara menerima paket (sebelum 30 Maret).</li>
+                        <li><input type="checkbox" class="task-checkbox"> Stok makanan beku untuk 7 hari <span class="deadline">(sebelum 30 Maret)</span> <span class="priority-badge">Prioritas</span></li>
+                        <li><input type="checkbox" class="task-checkbox"> Selesaikan semua cucian <span class="deadline">(sebelum 30 Maret)</span></li>
+                        <li><input type="checkbox" class="task-checkbox"> Bersihkan rumah menyeluruh <span class="deadline">(sebelum 30 Maret)</span></li>
+                        <li><input type="checkbox" class="task-checkbox"> Ajarkan Yohanes, Peter, dan Fiqry menerima paket <span class="deadline">(sebelum 30 Maret)</span></li>
                     </ul>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">Sus Dilah (Pengasuh Anak 1 Tahun)</button>
+                <button class="dropbtn">Sus Dilah</button>
                 <div class="dropdown-content">
                     <ul class="checklist">
-                        <li><input type="checkbox"> Tulis jadwal Ebi (makan, tidur, main) untuk Riseu (sebelum 30 Maret).</li>
-                        <li><input type="checkbox"> Serahkan tugas dan nomor darurat ke Riseu (30 Maret).</li>
+                        <li><input type="checkbox" class="task-checkbox"> Tulis jadwal Ebi untuk Riseu <span class="deadline">(sebelum 30 Maret)</span></li>
+                        <li><input type="checkbox" class="task-checkbox"> Berikan nomor darurat <span class="deadline">(30 Maret)</span> <span class="priority-badge">Prioritas</span></li>
                     </ul>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">Riseu (Pengasuh Sementara)</button>
+                <button class="dropbtn">Riseu</button>
                 <div class="dropdown-content">
                     <ul class="checklist">
-                        <li><input type="checkbox"> Pelajari jadwal Ebi dari Sus Dilah (30 Maret).</li>
-                        <li><input type="checkbox"> Siapkan nomor darurat dan kebutuhan Ebi (30 Maret).</li>
+                        <li><input type="checkbox" class="task-checkbox"> Pelajari jadwal Ebi <span class="deadline">(30 Maret)</span></li>
+                        <li><input type="checkbox" class="task-checkbox"> Siapkan nomor darurat <span class="deadline">(30 Maret)</span></li>
                     </ul>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">Fiqry (Supir)</button>
+                <button class="dropbtn">Fiqry</button>
                 <div class="dropdown-content">
                     <ul class="checklist">
-                        <li><input type="checkbox"> Belanja kebutuhan rumah (makanan, popok, obat) untuk stok sampai 5 April (sebelum 1 April).</li>
-                        <li><input type="checkbox"> Beri tahu Peter & Yohanes cara pesan ojek online (sebelum 1 April).</li>
+                        <li><input type="checkbox" class="task-checkbox"> Belanja stok makanan dan kebutuhan <span class="deadline">(sebelum 1 April)</span> <span class="priority-badge">Prioritas</span></li>
+                        <li><input type="checkbox" class="task-checkbox"> Ajarkan Peter & Yohanes pesan ojek online <span class="deadline">(sebelum 1 April)</span></li>
                     </ul>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">Peter & Yohanes (Perawat Pria)</button>
+                <button class="dropbtn">Peter & Yohanes</button>
                 <div class="dropdown-content">
                     <ul class="checklist">
-                        <li><input type="checkbox"> Pastikan stok obat kakek cukup sampai 7 April (sebelum 25 Maret).</li>
-                        <li><input type="checkbox"> Pelajari cara pesan makanan online (sebelum 30 Maret).</li>
-                        <li><input type="checkbox"> Siapkan alat menyapu untuk tugas tambahan (sebelum 25 Maret).</li>
+                        <li><input type="checkbox" class="task-checkbox"> Pastikan stok obat kakek <span class="deadline">(sebelum 25 Maret)</span> <span class="priority-badge">Prioritas</span></li>
+                        <li><input type="checkbox" class="task-checkbox"> Pelajari pesan makanan online <span class="deadline">(sebelum 30 Maret)</span></li>
+                        <li><input type="checkbox" class="task-checkbox"> Siapkan alat menyapu <span class="deadline">(sebelum 25 Maret)</span></li>
+                        <li><input type="checkbox" class="task-checkbox"> Tangani genset saat mati listrik <span class="deadline">(selama 25 Maret - 7 April)</span></li>
                     </ul>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">Sus Ifah (Pengasuh Bayi)</button>
+                <button class="dropbtn">Sus Ifah</button>
                 <div class="dropdown-content">
                     <ul class="checklist">
-                        <li><input type="checkbox"> Stok popok, susu, dan kebutuhan bayi sampai 7 April (sebelum 25 Maret).</li>
-                        <li><input type="checkbox"> Pelajari cara membantu Riseu jika Ebi rewel (sebelum 31 Maret).</li>
+                        <li><input type="checkbox" class="task-checkbox"> Stok popok dan susu adik Ebi <span class="deadline">(sebelum 25 Maret)</span> <span class="priority-badge">Prioritas</span></li>
+                        <li><input type="checkbox" class="task-checkbox"> Pelajari bantu Riseu <span class="deadline">(sebelum 31 Maret)</span></li>
                     </ul>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>© 2025 Panduan Rumah Tangga</p>
+        <p>© 2025 Panduan Rumah TAH</p>
     </footer>
     <script>
         document.querySelectorAll('.dropbtn').forEach(button => {
@@ -100,6 +113,17 @@
                 content.style.display = content.style.display === 'block' ? 'none' : 'block';
             });
         });
+        document.querySelectorAll('.task-checkbox').forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                const li = checkbox.parentElement;
+                if (checkbox.checked) {
+                    li.classList.add('completed');
+                } else {
+                    li.classList.remove('completed');
+                }
+            });
+        });
     </script>
+    <script src="script.js"></script>
 </body>
 </html>

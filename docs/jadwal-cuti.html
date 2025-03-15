@@ -3,143 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jadwal Cuti - Panduan Rumah Tangga Libur Lebaran</title>
+    <title>Jadwal Cuti - Panduan Rumah TAH Selama Libur Lebaran</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Panduan Rumah Tangga Libur Lebaran</h1>
+        <h1>Panduan Rumah TAH Selama Libur Lebaran</h1>
+        <button class="hamburger">☰</button>
         <nav>
             <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="jadwal-cuti.html">Jadwal Cuti</a></li>
-                <li><a href="tanggung-jawab.html">Tanggung Jawab</a></li>
-                <li><a href="persiapan.html">Persiapan</a></li>
+                <li><a href="index.html">🏠 Beranda</a></li>
+                <li class="active"><a href="jadwal-cuti.html">📅 Jadwal</a></li>
+                <li><a href="tanggung-jawab.html">📋 Tanggung Jawab</a></li>
+                <li><a href="persiapan.html">✅ Persiapan</a></li>
             </ul>
         </nav>
+        <div class="mobile-menu">
+            <button class="close-menu">✕</button>
+            <ul>
+                <li><a href="index.html">🏠 Beranda</a></li>
+                <li><a href="jadwal-cuti.html">📅 Jadwal</a></li>
+                <li><a href="tanggung-jawab.html">📋 Tanggung Jawab</a></li>
+                <li><a href="persiapan.html">✅ Persiapan</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <section>
-            <h2>Jadwal Cuti Staf</h2>
+            <h2>Cek Jadwal Libur</h2>
             <div class="legend">
                 <span class="on-duty">Bekerja</span>
                 <span class="absent">Cuti</span>
                 <span class="not-started">Belum Mulai / Selesai</span>
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tanggal</th>
-                        <th>Mang Agus</th>
-                        <th>Mba Lia</th>
-                        <th>Sus Dilah</th>
-                        <th>Riseu</th>
-                        <th>Fiqry</th>
-                        <th>Peter & Yohanes</th>
-                        <th>Sus Ifah</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>25 Maret</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="not-started">Belum Mulai</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
-                    <tr><td>26 Maret</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="not-started">Belum Mulai</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
-                    <tr><td>27 Maret</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="not-started">Belum Mulai</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
-                    <tr><td>28 Maret</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="not-started">Belum Mulai</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
-                    <tr><td>29 Maret</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="not-started">Belum Mulai</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
-                    <tr><td>30 Maret</td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
-                    <tr><td>31 Maret</td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
-                    <tr><td>1 April</td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
-                    <tr><td>2 April</td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
-                    <tr><td>3 April</td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
-                    <tr><td>4 April</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
-                    <tr><td>5 April</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
-                    <tr><td>6 April</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
-                    <tr><td>7 April</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="not-started">Selesai</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
-                </tbody>
-            </table>
-
-            <h2>Tanggung Jawab dan Lingkup Kerja</h2>
-            <div class="dropdown">
-                <button class="dropbtn">Mang Agus (Tukang Kebun)</button>
-                <div class="dropdown-content">
-                    <p><strong>Tanggung Jawab Utama:</strong> Merawat kebun, menyapu halaman setiap dua hari, dan perbaikan kecil.</p>
-                    <p><strong>Lingkup Kerja saat Cuti (25 Maret - 7 April):</strong> Pekerjaan kebun ditunda, menyapu halaman dialihkan ke Peter & Yohanes.</p>
-                    <p><strong>Implikasi:</strong> Halaman mungkin kurang rapi, dan ada risiko kecil jika ada kerusakan mendadak.</p>
-                    <p><strong>Siapa yang Terdampak:</strong> Seluruh rumah tangga, terutama Peter & Yohanes yang harus menyapu.</p>
-                    <p><strong>Tambahan Beban Kerja:</strong> Peter & Yohanes perlu tambahan 15-30 menit per hari untuk menyapu halaman.</p>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Mba Lia (Pembantu Rumah Tangga)</button>
-                <div class="dropdown-content">
-                    <p><strong>Tanggung Jawab Utama:</strong> Memasak, membersihkan rumah, mencuci, menyetrika, dan membuka pintu/gerbang untuk tamu atau paket.</p>
-                    <p><strong>Lingkup Kerja saat Cuti (30 Maret - 3 April):</strong> Tidak ada masakan, pembersihan minimal, dan cucian ditunda atau pakai jasa laundry. Membuka pintu dialihkan ke Peter & Yohanes.</p>
-                    <p><strong>Implikasi:</strong> Makanan harus disiapkan sebelumnya atau dipesan, rumah mungkin kurang bersih, dan cucian bisa menumpuk.</p>
-                    <p><strong>Siapa yang Terdampak:</strong> Seluruh rumah tangga (makanan), Peter & Yohanes (membuka pintu), Sus Ifah (membantu bersih).</p>
-                    <p><strong>Tambahan Beban Kerja:</strong> Peter & Yohanes perlu 10-20 menit tambahan untuk membuka pintu, Sus Ifah perlu 30 menit untuk pembersihan ringan.</p>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Sus Dilah (Pengasuh Anak 1 Tahun)</button>
-                <div class="dropdown-content">
-                    <p><strong>Tanggung Jawab Utama:</strong> Merawat Ebi (1 tahun), termasuk makan, tidur, dan bermain.</p>
-                    <p><strong>Lingkup Kerja saat Cuti (31 Maret - 7 April):</strong> Perawatan Ebi dialihkan ke Riseu (pengasuh sementara).</p>
-                    <p><strong>Implikasi:</strong> Ebi mungkin butuh waktu untuk menyesuaikan diri dengan Riseu, ada risiko kecil jika Riseu tidak paham kebiasaan Ebi.</p>
-                    <p><strong>Siapa yang Terdampak:</strong> Ebi (penyesuaian), Riseu (beban kerja penuh).</p>
-                    <p><strong>Tambahan Beban Kerja:</strong> Riseu perlu 1-2 jam tambahan pada hari pertama untuk memahami kebiasaan Ebi.</p>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Riseu (Pengasuh Sementara)</button>
-                <div class="dropdown-content">
-                    <p><strong>Tanggung Jawab Utama:</strong> Merawat Ebi (1 tahun) selama Sus Dilah cuti.</p>
-                    <p><strong>Lingkup Kerja saat Bekerja (30 Maret - 7 April):</strong> Mengurus semua kebutuhan Ebi, termasuk makan, tidur, dan bermain.</p>
-                    <p><strong>Implikasi:</strong> Tidak ada dampak signifikan jika serah terima berjalan baik, tapi ada risiko kecil jika Riseu kesulitan menyesuaikan diri.</p>
-                    <p><strong>Siapa yang Terdampak:</strong> Ebi (penyesuaian), Sus Ifah (mungkin membantu jika ada masalah).</p>
-                    <p><strong>Tambahan Beban Kerja:</strong> Sus Ifah mungkin perlu 30 menit tambahan jika Ebi rewel di hari pertama.</p>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Fiqry (Supir)</button>
-                <div class="dropdown-content">
-                    <p><strong>Tanggung Jawab Utama:</strong> Mengelola mobil, antar-jemput, belanja kebutuhan, dan membantu membuka pintu/gerbang.</p>
-                    <p><strong>Lingkup Kerja saat Cuti (1 April - 5 April):</strong> Tidak ada transportasi, belanja diganti dengan pesan antar, membuka pintu dialihkan ke Peter & Yohanes.</p>
-                    <p><strong>Implikasi:</strong> Tidak ada transportasi langsung, kebutuhan harus dipesan online, dan Peter & Yohanes akan lebih sibuk.</p>
-                    <p><strong>Siapa yang Terdampak:</strong> Seluruh rumah tangga (transportasi), Peter & Yohanes (membuka pintu).</p>
-                    <p><strong>Tambahan Beban Kerja:</strong> Peter & Yohanes perlu 15-30 menit tambahan untuk membuka pintu setiap hari.</p>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Peter & Yohanes (Perawat Pria)</button>
-                <div class="dropdown-content">
-                    <p><strong>Tanggung Jawab Utama:</strong> Merawat kakek 24/7 (makan, mandi, obat), dan membantu membuka pintu/gerbang saat tidak sibuk.</p>
-                    <p><strong>Lingkup Kerja selama Libur:</strong> Tetap merawat kakek, ditambah menyapu halaman (dari Mang Agus) dan membuka pintu lebih sering (dari Mba Lia dan Fiqry).</p>
-                    <p><strong>Implikasi:</strong> Beban kerja meningkat, risiko kelelahan jika tidak dikelola dengan baik.</p>
-                    <p><strong>Siapa yang Terdampak:</strong> Peter & Yohanes (beban kerja), kakek (jika mereka terlalu sibuk).</p>
-                    <p><strong>Tambahan Beban Kerja:</strong> 45-60 menit per hari untuk menyapu dan membuka pintu.</p>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Sus Ifah (Pengasuh Bayi)</button>
-                <div class="dropdown-content">
-                    <p><strong>Tanggung Jawab Utama:</strong> Merawat bayi baru lahir (adik Ebi), termasuk makan, tidur, dan ganti popok.</p>
-                    <p><strong>Lingkup Kerja selama Libur:</strong> Tetap merawat bayi, ditambah membantu pembersihan ringan (dari Mba Lia) dan mungkin membantu Riseu jika Ebi rewel.</p>
-                    <p><strong>Implikasi:</strong> Beban kerja sedikit meningkat, risiko kecil jika bayi dan Ebi rewel bersamaan.</p>
-                    <p><strong>Siapa yang Terdampak:</strong> Sus Ifah (beban kerja), Riseu (jika ada bantuan).</p>
-                    <p><strong>Tambahan Beban Kerja:</strong> 30-45 menit per hari untuk pembersihan ringan dan membantu Riseu.</p>
-                </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tanggal</th>
+                            <th>Mang Agus 🌱</th>
+                            <th>Mba Lia 🧹</th>
+                            <th>Sus Dilah 👶</th>
+                            <th>Riseu 👶</th>
+                            <th>Fiqry 🚗</th>
+                            <th>Peter & Yohanes 🩺</th>
+                            <th>Sus Ifah 🍼</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>25 Maret</strong></td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="not-started">Belum Mulai</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
+                        <tr><td><strong>26 Maret</strong></td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="not-started">Belum Mulai</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
+                        <tr><td><strong>27 Maret</strong></td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="not-started">Belum Mulai</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
+                        <tr><td><strong>28 Maret</strong></td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="not-started">Belum Mulai</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
+                        <tr><td><strong>29 Maret</strong></td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="not-started">Belum Mulai</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
+                        <tr><td><strong>30 Maret</strong></td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
+                        <tr><td><strong>31 Maret</strong></td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
+                        <tr><td><strong>1 April</strong></td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
+                        <tr><td><strong>2 April</strong></td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
+                        <tr><td><strong>3 April</strong></td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
+                        <tr><td><strong>4 April</strong></td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
+                        <tr><td><strong>5 April</strong></td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
+                        <tr><td><strong>6 April</strong></td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="absent">Cuti</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
+                        <tr><td><strong>7 April</strong></td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="not-started">Selesai</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td><td class="on-duty">Bekerja</td></tr>
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
     <footer>
-        <p>© 2025 Panduan Rumah Tangga</p>
+        <p>© 2025 Panduan Rumah TAH</p>
     </footer>
-    <script>
-        document.querySelectorAll('.dropbtn').forEach(button => {
-            button.addEventListener('click', () => {
-                const content = button.nextElementSibling;
-                content.style.display = content.style.display === 'block' ? 'none' : 'block';
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

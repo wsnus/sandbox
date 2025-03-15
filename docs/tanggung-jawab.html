@@ -3,51 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanggung Jawab - Panduan Rumah Tangga Libur Lebaran</title>
+    <title>Tanggung Jawab - Panduan Rumah TAH Selama Libur Lebaran</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Panduan Rumah Tangga Libur Lebaran</h1>
+        <h1>Panduan Rumah TAH Selama Libur Lebaran</h1>
+        <button class="hamburger">☰</button>
         <nav>
             <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="jadwal-cuti.html">Jadwal Cuti</a></li>
-                <li><a href="tanggung-jawab.html">Tanggung Jawab</a></li>
-                <li><a href="persiapan.html">Persiapan</a></li>
+                <li><a href="index.html">🏠 Beranda</a></li>
+                <li><a href="jadwal-cuti.html">📅 Jadwal</a></li>
+                <li class="active"><a href="tanggung-jawab.html">📋 Tanggung Jawab</a></li>
+                <li><a href="persiapan.html">✅ Persiapan</a></li>
             </ul>
         </nav>
+        <div class="mobile-menu">
+            <button class="close-menu">✕</button>
+            <ul>
+                <li><a href="index.html">🏠 Beranda</a></li>
+                <li><a href="jadwal-cuti.html">📅 Jadwal</a></li>
+                <li><a href="tanggung-jawab.html">📋 Tanggung Jawab</a></li>
+                <li><a href="persiapan.html">✅ Persiapan</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <section>
-            <h2>Tanggung Jawab yang Disesuaikan</h2>
-            <h3>Mang Agus (Tukang Kebun) Cuti: 25 Maret - 7 April</h3>
+            <h2>Lihat Tugasmu</h2>
+            <p>Klik tab di bawah untuk melihat tanggung jawab pengganti selama cuti.</p>
+            <div class="tabs">
+                <button class="tab-button active" data-tab="kebersihan-rumah-besar">🌱 Kebersihan Rumah Besar dan Area Kebon</button>
+                <button class="tab-button" data-tab="kebersihan-rumah-kecil">🧹 Kebersihan Rumah Kecil</button>
+                <button class="tab-button" data-tab="ebi">👶 Ebi</button>
+            </div>
+            <div class="tab-content" id="kebersihan-rumah-besar">
+                <h3>Pengganti Mang Agus - Peter & Yohanes & Fiqry</h3>
+                <ul>
+                    <li>Sapu halaman setiap hari (15-30 menit, Peter & Yohanes).</li>
+                    <li>Sapu kebon belakang setiap pagi dan sore (Peter & Yohanes).</li>
+                    <li>Laporkan kerusakan kebun jika ada (Fiqry).</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="kebersihan-rumah-kecil" style="display: none;">
+                <h3>Pengganti Mba Lia - Riseu & Sus Ifah</h3>
+                <ul>
+                    <li>Bersihkan kamar tidur utama setiap hari (30 menit, Sus Ifah).</li>
+                    <li>Cuci dan setrika laundry (Sus Ifah).</li>
+                    <li>Bersihkan kamar tidur atas dan dapur (Riseu).</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="ebi" style="display: none;">
+                <h3>Pengganti Sus Dilah - Riseu</h3>
+                <ul>
+                    <li>Urusi kebutuhan Ebi (makan, tidur, bermain) sepanjang hari.</li>
+                    <li>Tanyakan kebiasaan Ebi jika bingung.</li>
+                </ul>
+            </div>
+            <h3>Makanan untuk Seluruh Rumah</h3>
             <ul>
-                <li>Pekerjaan kebun (misalnya memotong rumput) akan ditunda.</li>
-                <li>Peter & Yohanes akan menyapu halaman setiap hari.</li>
-            </ul>
-            <h3>Mba Lia (Pembantu Rumah Tangga) Cuti: 30 Maret - 3 April</h3>
-            <ul>
-                <li><strong>Memasak:</strong> Gunakan makanan beku atau pesan makanan.</li>
-                <li><strong>Membersihkan:</strong> Fokus pada dapur, kamar mandi, dan kamar anak. Peter & Yohanes atau Sus Ifah bisa bantu membersihkan ringan.</li>
-                <li><strong>Mencuci:</strong> Selesaikan cucian sebelum 29 Maret. Gunakan jasa laundry kalau perlu.</li>
-                <li><strong>Membuka Pintu:</strong> Peter & Yohanes akan bantu saat ada tamu atau paket.</li>
-            </ul>
-            <h3>Sus Dilah (Pengasuh Anak 1 Tahun) Cuti: 31 Maret - 7 April</h3>
-            <ul>
-                <li><strong>Perawatan Anak:</strong> Riseu akan mengurus anak 1 tahun sepenuhnya.</li>
-                <li><strong>Serahan Tugas:</strong> Tanggal 30 Maret, Sus Dilah akan jelaskan jadwal anak ke Riseu.</li>
-            </ul>
-            <h3>Fiqry (Supir) Cuti: 1 April - 5 April</h3>
-            <ul>
-                <li><strong>Transportasi:</strong> Pakai aplikasi ojek online (misalnya Grab, Gojek) atau taksi untuk keperluan mendesak.</li>
-                <li><strong>Makanan/Belanja:</strong> Pesan online dengan pengantaran.</li>
-                <li><strong>Membuka Pintu:</strong> Peter & Yohanes atau Sus Ifah bisa bantu.</li>
+                <li>Beli makanan di warteg setiap pagi untuk Peter & Yohanes.</li>
+                <li>Siapkan nasi (Riseu atau Sus Ifah).</li>
             </ul>
         </section>
     </main>
     <footer>
-        <p>© 2025 Panduan Rumah Tangga</p>
+        <p>© 2025 Panduan Rumah TAH</p>
     </footer>
+    <script>
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+                tabContents.forEach(content => {
+                    content.style.display = content.id === tabId ? 'block' : 'none';
+                });
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+            });
+        });
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>

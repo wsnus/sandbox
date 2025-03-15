@@ -1,53 +1,48 @@
-/* General Styles */
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #FFFFFF;
+    color: #222222;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
     line-height: 1.6;
 }
 
-/* Header */
 header {
-    background-color: #2c3e50;
-    color: white;
+    background-color: #F7F7F7;
+    padding: 20px;
     text-align: center;
-    padding: 20px 0;
+    position: relative;
 }
 
 header h1 {
+    color: #FF385C;
+    font-size: 24px;
     margin: 0;
-    font-size: 2em;
 }
 
-/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0;
-    background-color: #34495e;
+    margin: 0;
     display: flex;
     justify-content: center;
-}
-
-nav ul li {
-    margin: 0;
+    background-color: #F7F7F7;
 }
 
 nav ul li a {
-    color: white;
+    color: #222222;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 10px 20px;
     display: block;
     transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-    background-color: #1abc9c;
+nav ul li a:hover, nav ul li.active a {
+    background-color: #FF385C;
+    color: #FFFFFF;
 }
 
-/* Main Content */
 main {
     max-width: 1200px;
     margin: 20px auto;
@@ -55,24 +50,30 @@ main {
 }
 
 section {
-    background-color: white;
+    background-color: #FFFFFF;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-bottom: 20px;
 }
 
 h2 {
-    color: #2c3e50;
-    font-size: 1.8em;
+    color: #FF385C;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 h3 {
-    color: #34495e;
-    font-size: 1.4em;
+    color: #222222;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 /* Table Styles */
+.table-container {
+    overflow-x: auto;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -80,26 +81,26 @@ table {
 }
 
 th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
+    border: 1px solid #E0E0E0;
+    padding: 12px;
     text-align: center;
 }
 
 th {
-    background-color: #34495e;
-    color: white;
+    background-color: #F7F7F7;
+    color: #222222;
 }
 
-.on-duty {
-    background-color: #d4edda;
+td.absent {
+    background-color: #FFEBEE; /* Cuti */
 }
 
-.absent {
-    background-color: #f8d7da;
+td.on-duty {
+    background-color: #E0F7FA; /* Bekerja */
 }
 
-.not-started {
-    background-color: #e2e3e5;
+td.not-started {
+    background-color: #F5F5F5; /* Belum Mulai / Selesai */
 }
 
 /* Legend */
@@ -114,23 +115,43 @@ th {
     border-radius: 4px;
 }
 
-/* Critical Period */
-.critical-period {
-    background-color: #fff3cd;
-    padding: 15px;
-    border: 1px solid #ffeeba;
-    border-radius: 5px;
-    margin-top: 20px;
+/* Tabs for Tanggung Jawab */
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
-/* Dropdown Styles */
+.tab-button {
+    background-color: #F7F7F7;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-button.active {
+    background-color: #FF385C;
+    color: #FFFFFF;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+}
+
+/* Dropdown for Persiapan */
 .dropdown {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .dropbtn {
-    background-color: #1abc9c;
-    color: white;
+    background-color: #F7F7F7;
+    color: #222222;
     padding: 12px;
     font-size: 16px;
     border: none;
@@ -142,19 +163,18 @@ th {
 }
 
 .dropbtn:hover {
-    background-color: #16a085;
+    background-color: #E0E0E0;
 }
 
 .dropdown-content {
     display: none;
-    background-color: #f9f9f9;
+    background-color: #F9F9F9;
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-top: 5px;
 }
 
-/* Checklist Styles */
 .checklist {
     list-style: none;
     padding: 0;
@@ -162,18 +182,91 @@ th {
 
 .checklist li {
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .checklist input[type="checkbox"] {
     margin-right: 10px;
 }
 
+.deadline {
+    color: #FF385C;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.priority-badge {
+    background-color: #FF385C;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #717171;
+}
+
+/* Mobile Menu */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #222222;
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 1000;
+}
+
+.mobile-menu.show {
+    display: block;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.mobile-menu a {
+    color: #FFFFFF;
+    font-size: 1.5em;
+    text-decoration: none;
+    display: block;
+    margin: 20px 0;
+}
+
+.close-menu {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background-color: #2c3e50;
-    color: white;
+    padding: 10px;
+    background-color: #F7F7F7;
+    color: #717171;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -181,22 +274,9 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-    nav ul li a {
-        padding: 10px;
-    }
-    table, thead, tbody, th, td, tr {
-        display: block;
-    }
-    th, td {
-        padding: 8px;
-        text-align: left;
-    }
-    th {
-        background-color: #34495e;
-        color: white;
-    }
+    nav ul { display: none; }
+    .hamburger { display: block; }
+    .tabs { flex-direction: column; }
+    .tab-button { width: 100%; margin: 5px 0; }
+    .table-container { overflow-x: scroll; }
 }
