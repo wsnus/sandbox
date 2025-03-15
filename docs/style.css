@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     background-color: #FFFFFF;
@@ -22,12 +21,6 @@ header h1 {
     color: #FF385C;
     font-size: 28px;
     margin: 0;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-header a {
-    text-decoration: none;
 }
 
 nav ul {
@@ -39,10 +32,14 @@ nav ul {
     background-color: #F7F7F7;
 }
 
+nav ul li {
+    margin: 0 10px;
+}
+
 nav ul li a {
     color: #222222;
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 10px 20px;
     display: block;
     transition: background-color 0.3s;
 }
@@ -50,6 +47,7 @@ nav ul li a {
 nav ul li a:hover, nav ul li.active a {
     background-color: #FF385C;
     color: #FFFFFF;
+    border-radius: 5px;
 }
 
 main {
@@ -79,9 +77,9 @@ h3 {
     margin-bottom: 15px;
 }
 
-/* Zoomable Image for Jadwal Cuti */
 .zoomable-image {
     text-align: center;
+    margin-top: 10px;
 }
 
 .schedule-image {
@@ -95,7 +93,6 @@ h3 {
     transform: scale(2);
 }
 
-/* Tabs for Tanggung Jawab */
 .tabs {
     display: flex;
     flex-wrap: wrap;
@@ -124,7 +121,6 @@ h3 {
     border-radius: 5px;
 }
 
-/* Dropdown for Persiapan */
 .dropdown {
     margin-bottom: 15px;
 }
@@ -190,21 +186,12 @@ h3 {
     color: #717171;
 }
 
-/* Important Info Pop-up Effect */
 .important-info {
-    position: relative;
     background-color: #FFF3F3;
     padding: 20px;
     border-left: 4px solid #FF385C;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.important-info:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* Standby Info Box */
 .standby-info {
     background-color: #F9F9F9;
     padding: 15px;
@@ -214,7 +201,6 @@ h3 {
     font-style: italic;
 }
 
-/* Mobile Menu */
 .hamburger {
     display: none;
     background: none;
@@ -265,7 +251,6 @@ h3 {
     right: 20px;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 15px;
@@ -274,58 +259,49 @@ footer {
     width: 100%;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     header {
         padding: 15px;
     }
-
     header h1 {
         font-size: 20px;
     }
-
     nav ul {
         display: none;
     }
-
     .hamburger {
         display: block;
     }
-
     main {
-        padding: 15px;
+        padding: 10px;
     }
-
     section {
         padding: 15px;
     }
-
     h2 {
-        font-size: 20px;
-    }
-
-    h3 {
         font-size: 18px;
     }
-
-    p, ul li {
+    h3 {
         font-size: 16px;
     }
-
+    p, ul li {
+        font-size: 14px;
+    }
     .tabs {
         flex-direction: column;
     }
-
     .tab-button {
         width: 100%;
         margin: 5px 0;
     }
-
     .schedule-image.zoomed {
         transform: scale(2);
     }
-
-    .important-info:hover {
-        transform: none;
+    .dropdown-content {
+        font-size: 14px;
+    }
+    .priority-badge {
+        font-size: 10px;
+        padding: 1px 6px;
     }
 }
